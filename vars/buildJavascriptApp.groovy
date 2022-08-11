@@ -11,8 +11,7 @@ def call(Map config=[:], Closure body) {
             //sh "npm test"
             //mvn clean test
           
-            sh "mvn clean package" 
-            sh "mvn --version"
+            sh 'mvn compile'
             sh 'mvn clean test'
   
             
