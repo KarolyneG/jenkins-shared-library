@@ -1,10 +1,5 @@
 def call(Map config=[:], Closure body) {
-    
-    tools {
-    maven "mvn"
-    }
-    
-    
+      
     node {
         git url: "https://github.com/werne2j/sample-nodejs"
 
