@@ -12,7 +12,8 @@ def call(Map config=[:], Closure body) {
             //mvn clean test
             maven "mvn" 
             sh "mvn --version"
-            sh "mvn clean test"
+            mvn clean test
+  
             
         }
 
