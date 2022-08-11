@@ -10,7 +10,8 @@ def call(Map config=[:], Closure body) {
         stage("Test") {
             //sh "npm test"
             //mvn clean test
-            sh "mvn -U clean verify"
+          
+            sh "mvn clean package" 
             sh "mvn --version"
             sh 'mvn clean test'
   
