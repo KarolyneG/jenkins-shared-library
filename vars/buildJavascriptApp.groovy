@@ -13,7 +13,8 @@ def call(Map config=[:], Closure body) {
             sh "mvn clean"
             //sh 'mvn compile'
             //sh 'mvn package'
-            sh 'mvn test'
+            //sh 'mvn test'
+             sh "mvn clean test"
               
   
             
