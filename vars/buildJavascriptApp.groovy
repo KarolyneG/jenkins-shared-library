@@ -7,9 +7,9 @@ def call(Map config=[:], Closure body) {
         }
 
         stage("Test") {
-            //sh "npm test"
+            sh "npm test"
             //mvn clean test
-            sh "mvn test"
+            //sh "mvn test"
         }
 
         stage("Deploy") {
