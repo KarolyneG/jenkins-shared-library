@@ -1,4 +1,10 @@
 def call(Map config=[:], Closure body) {
+    
+    tools {
+    maven "mvn"
+    }
+    
+    
     node {
         git url: "https://github.com/werne2j/sample-nodejs"
 
@@ -9,7 +15,8 @@ def call(Map config=[:], Closure body) {
         stage("Test") {
             sh "npm test"
             //mvn clean test
-            //sh "mvn test"
+            sh 'mvn --version'
+            
         }
 
         stage("Deploy") {
